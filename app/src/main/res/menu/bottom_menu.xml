@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/ilanlar"
+        android:icon="@drawable/home2x"
+        android:title="İlanlar"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/basvuru"
+        android:icon="@drawable/share2x"
+        android:title="Başvuru"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/ara"
+        android:icon="@drawable/search2x"
+        android:title="Ara"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/bildirim"
+        android:icon="@drawable/watch2x"
+        android:title="Bildirim"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/profil"
+        android:icon="@drawable/person1x"
+        android:title="Profil"
+        app:showAsAction="ifRoom"/>
+</menu>

@@ -1,13 +1,10 @@
 package com.example.crewin_android.Controller;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.MenuItem;
-
 import com.example.crewin_android.Controller.Fragment.IlanlarFragment;
 import com.example.crewin_android.Controller.Fragment.ProfilFragment;
 import com.example.crewin_android.R;
@@ -20,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
         bottomNavigationView.setSelectedItemId(R.id.profil);

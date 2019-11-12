@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
 import com.example.crewin_android.Adapter.InfoAdapter;
 import com.example.crewin_android.Model.ResponseModel;
@@ -13,10 +12,8 @@ import com.example.crewin_android.R;
 import com.example.crewin_android.Service.ApiClient;
 import com.example.crewin_android.Service.RestInterface;
 import com.example.crewin_android.Model.User;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -28,7 +25,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class ProfilFragment extends Fragment {
-
     RecyclerView infoListView;
     ArrayList<ResponseModel> responseList = new ArrayList<ResponseModel>();
     CircleImageView headerImageView, profileImageView;
@@ -42,8 +38,6 @@ public class ProfilFragment extends Fragment {
         headerUsername = root.findViewById(R.id.header_username);
         profileImageView = root.findViewById(R.id.profile_image);
         profileUserName = root.findViewById(R.id.profile_username);
-        ArrayList<String> list = new ArrayList<String>();
-
         getDataFromService();
         return root;
     }
@@ -58,7 +52,6 @@ public class ProfilFragment extends Fragment {
                 System.out.println(response.body().get(0).getAD());
                 fillInfo(response.body());
             }
-
             @Override
             public void onFailure(Call<List<User>> call, Throwable t) {
                 System.out.println("error"+t);
@@ -103,13 +96,5 @@ public class ProfilFragment extends Fragment {
             headerUsername.setText(userList.get(0).getKULLANICIADI());
             profileUserName.setText(userList.get(0).getKULLANICIADI());
         }
-
-
-
-
-    }
-
-
-
-
+     }
 }

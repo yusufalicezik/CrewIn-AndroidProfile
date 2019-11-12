@@ -89,7 +89,7 @@ public class ProfilFragment extends Fragment {
         infoListView.setLayoutManager(linearLayoutManager);
         infoListView.setAdapter(adapter);
         if (userList.size() > 0){
-            if (userList.get(0).getRESIMURL() == null) {
+            if (userList.get(0).getRESIMURL() != null) {
                 Glide.with(this).load(userList.get(0).getRESIMURL()).into(headerImageView);
                 Glide.with(this).load(userList.get(0).getRESIMURL()).into(profileImageView);
             }

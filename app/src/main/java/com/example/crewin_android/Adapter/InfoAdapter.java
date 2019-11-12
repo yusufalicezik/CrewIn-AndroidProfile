@@ -33,7 +33,8 @@ public class InfoAdapter extends  RecyclerView.Adapter<InfoAdapter.InfoAdapterVi
             holder.infoDesc.setText("");
             holder.infoName.setText(responseList.get(position).getInfoType());
             holder.iconImage.setImageResource(R.drawable.infotitleimage);
-            holder.infoName.setTextSize(pxFromDp(11, mContext));
+            //holder.infoName.setTextSize(pxFromDp(11, mContext));
+            holder.infoName.setTextSize(22);
         }else{
             if(responseList.get(position).getInfoName().equalsIgnoreCase("Hakkında")){
                 holder.infoDesc.setText("");
@@ -43,7 +44,9 @@ public class InfoAdapter extends  RecyclerView.Adapter<InfoAdapter.InfoAdapterVi
                 holder.infoName.setText(responseList.get(position).getInfoName());
             }
             holder.iconImage.setImageResource(R.drawable.info_desc_line_image);
-            holder.infoName.setTextSize(pxFromDp(5, mContext));
+            holder.infoName.setTextSize(14);
+
+            //holder.infoName.setTextSize(pxFromDp(5, mContext));
         }
     }
 

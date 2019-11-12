@@ -50,7 +50,7 @@ public class ProfilFragment extends Fragment {
 
     public void getDataFromService(){
         RestInterface restInterface = ApiClient.getClient().create(RestInterface.class);
-        Call<List<User>> call = restInterface.getUserDeneme();
+        Call<List<User>> call = restInterface.getUser(2);
         call.enqueue(new Callback<List<User>>() {
             @Override
             public void onResponse(Call<List<User>> call, Response<List<User>> response) {

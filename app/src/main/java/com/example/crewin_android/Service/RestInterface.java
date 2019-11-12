@@ -9,7 +9,7 @@ import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface RestInterface {
-    @POST
+    @POST("genel_bilgiler")
     Call<List<User>> getUser(@Query("kullanici_id") int id);
 
     @POST("genel_bilgiler?kullanici_id=1")
